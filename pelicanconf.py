@@ -36,5 +36,7 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
+THEME = '../../pelican-themes/attila'
+
 # PLUGIN_PATHS = ['./plugins']
 # PLUGINS = ['ipynb.markup']
