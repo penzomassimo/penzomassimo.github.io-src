@@ -38,6 +38,10 @@ help:
 	@echo '                                                                          '
 
 
+mp_clean:
+	rm -rfv $(OUTPUTDIR)/*
+
+
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
