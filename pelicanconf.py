@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Massimo Penzo'
-SITENAME = 'MP TEST TITLE'
+SITENAME = 'penzomassimo'
 SITEURL = ''
 
 PATH = 'content'
@@ -36,7 +36,7 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
-THEME = '../../pelican-themes/taman'
+THEME = './theme'
 
 # PLUGIN_PATHS = ['./plugins']
 # PLUGINS = ['ipynb.markup']
