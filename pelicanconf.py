@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Massimo Penzo'
+AUTHOR = 'massimo_penzo'
 SITENAME = 'penzomassimo'
 SITEURL = ''
 
@@ -20,14 +20,15 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('gitlab', '#'),
+          ('github', '#'),
+          ('bitbucket', '#'))
 
 DEFAULT_PAGINATION = 10
 
@@ -36,7 +37,12 @@ DEFAULT_PAGINATION = 10
 
 MARKUP = ('md', 'ipynb')
 
+# Theme settings
 THEME = './theme'
+USER_LOGO_URL = '/theme/images/my_logo.png'
+TAGLINE = 'Ceteros definiebas vel an, viderer disputando has ea, ei omnes lobortis cum.'
+DISPLAY_PAGES_ON_MENU = True
 
-# PLUGIN_PATHS = ['./plugins']
+PLUGIN_PATHS = ['./plugins']
 # PLUGINS = ['ipynb.markup']
+PLUGINS = ["render_math"]

@@ -6,13 +6,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Massimo Penzo">
-  <meta name="description" content="Posts and writings by Massimo Penzo">
+  <meta name="author" content="massimo_penzo">
+  <meta name="description" content="Posts and writings by massimo_penzo">
   <title>
     penzomassimo
 &ndash; My First Review  </title>
 
   <link href="//fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+
   <link rel="shortcut icon" href="/theme/images/logo.png">
 
   <link rel="stylesheet" type="text/css" href="/theme/css/all.css">
@@ -25,20 +28,23 @@
   <div class="container">
     <div class="four columns sidebar">
 <nav>
-  <h1>Hi.</h1>
+  <!-- <h1>Hi.</h1> -->
   <a href="/">
-    <img src="/theme/images/logo.png" id="gravatar" alt="My photo"/>
+    <img src="/theme/images/my_logo.png" id="gravatar" alt="My photo"/>
   </a>
-  <h2><a href="/">I'm Massimo Penzo</a></h2>
+  <h2><a href="/">I'm massimo_penzo</a></h2>
 
   <div id="bio">
-    <p></p>
+    <p>Ceteros definiebas vel an, viderer disputando has ea, ei omnes lobortis cum.</p>
   </div>
 
   <div id="social">
 Follow me:
 <div id="stalker">
 
+  <a title="# on Gitlab" href="https://gitlab.com/#">
+    <i class="fa fa-gitlab"></i>
+  </a>
 
 
 
@@ -54,7 +60,27 @@ Follow me:
 
 
 
+  <a title="# on Github" href="https://github.com/#">
+    <i class="fa fa-github"></i>
+  </a>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a title="# on Bitbucket" href="https://bitbucket.com/#/">
+    <i class="fa fa-bitbucket"></i>
+  </a>
 
 
 
@@ -71,26 +97,54 @@ Follow me:
 
   <div id="tags">
     <ul>
-      <li><a href="http://getpelican.com/" target="_blank">Pelican<span style="font-size: 0.7em">&#8599;</span> </a></li>
-      <li><a href="http://python.org/" target="_blank">Python.org<span style="font-size: 0.7em">&#8599;</span> </a></li>
-      <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2<span style="font-size: 0.7em">&#8599;</span> </a></li>
-      <li><a href="#" target="_blank">You can modify those links in your config file<span style="font-size: 0.7em">&#8599;</span> </a></li>
+      <li><a href="/pages/about-me.html">About me</a></li>
       </ul>
   </div>
 </nav>    </div>
 
     <div class="eleven columns content">
   <p class="meta">
-    03 December 2010
-    <a href="/">
+    03 May 2010
+<!--     <a href="/">
       <i class="home fa fa-home"></i>
     </a>
-  </p>
+ -->  </p>
 
   <h1 class="title"><a href="/my-first-review.html">My First Review</a></h1>
   
   <div class="article_text" id="post">
-    <p>Following is a review of my favorite mechanical keyboard.</p>
+    <p>Lorem ipsum dolor sit amet, sit probo discere ne, nec iusto eruditi vivendum ut. Menandri conclusionemque sea cu. Libris percipitur nam ad, sint alienum mediocrem usu et, sit sonet moderatius comprehensam id. Accumsan salutatus ea est, aliquam adipisci tincidunt duo cu. Cum ad homero lobortis, mea oratio assueverit efficiantur cu, affert consequat usu cu.</p>
+<p><code>print("The path-less shebang syntax *will* show line numbers.")</code></p>
+<div class="highlight"><pre><span></span>x = 1
+if x == 1:
+    # indented four spaces
+    print(&quot;x is 1.&quot;)
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">resnet18</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Resnet18 model</span>
+<span class="sd">    pretrained (bool): a recommended kwargs for all entrypoints</span>
+<span class="sd">    args &amp; kwargs are arguments for the function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">torchvision.models.resnet</span> <span class="kn">import</span> <span class="n">resnet18</span> <span class="k">as</span> <span class="n">_resnet18</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">_resnet18</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="n">checkpoint</span> <span class="o">=</span> <span class="s1">&#39;https://download.pytorch.org/models/resnet18-5c106cde.pth&#39;</span>
+    <span class="k">if</span> <span class="n">pretrained</span><span class="p">:</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">load_state_dict</span><span class="p">(</span><span class="n">model_zoo</span><span class="o">.</span><span class="n">load_url</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="bp">False</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">model</span>
+</pre></div>
+
+
+<p><img alt="Alt Text" src="/images/IMG_1289.JPG" /></p>
+<p>Ceteros definiebas vel an, viderer disputando has ea, ei omnes lobortis cum. Soluta vulputate theophrastus ad per. Explicari disputationi reprehendunt te eam. Eum exerci vivendum no. Cu est odio sint, cum ne quot minim saepe. In eius epicurei mei, pri alii mundi facete ei, bonorum corpora ad sea.</p>
+<p>Cum id euismod ullamcorper. Eam harum urbanitas ne. Id vel erat scripta assueverit, natum iriure imperdiet pri ei. Per eu eius facilis, at cum oratio probatus nominati, est ei ridens dicunt phaedrum. Ne sea harum blandit maiestatis.</p>
+<p>Pri in commodo democritum elaboraret. Sit mundi dolor temporibus te, sea ut utinam nominati. Tota laoreet veritus vel id, te cum admodum omittam, eripuit legimus at pri. Vim dolor commodo reprehendunt at, vel an fuisset praesent, affert veniam has eu.</p>
+<p>Nec ut esse semper verear. Ridens nostrum ad pro, id vel purto etiam eloquentiam. Cu has quidam laoreet principes, postulant honestatis repudiandae et duo. Ex ius prima porro populo, propriae invenire has et. Ea reque consul sit. Usu et rebum tibique. Ex has tota consequat, offendit appetere elaboraret an vis.</p>
+<p>Assum utinam recusabo in sit, vis partiendo vituperata et. Utroque ancillae dissentiet eu has, ocurreret appellantur sea ea. Nam verear corpora copiosae no, cu eam graecis dissentiet. Ne nam inimicus partiendo, qui te case maiorum, minim vitae tollit nam ei. Vide hendrerit efficiantur cum ea, minim efficiantur neglegentur sed te. Rebum prompta alterum est te, ex elaboraret consectetuer usu.</p>
+<p>Option labitur lobortis te qui, ei nullam propriae vix, probatus senserit appellantur te per. Ne oblique quaeque reprehendunt sed. Pro dolor minimum insolens ex, in torquatos philosophia est. Soleat latine repudiare an vim, cum ea unum mnesarchum. Quod definiebas ea has, utinam legere vivendum usu ut.</p>
+<p>Id duo veniam laoreet mediocritatem, sea liber conclusionemque in. No cum debet dolores detracto. Et eum option oblique debitis, sed utroque recteque scriptorem et. Nulla nominavi lucilius ei usu, errem consequat conceptam et his. Nostro aliquid definiebas ei sed, liber omnesque prodesset cum ex.</p>
   </div>
 
   <div class="article_meta related">
@@ -101,13 +155,13 @@ Follow me:
 
 
 
-      <div class="footer">
+      <!-- <div class="footer">
 <div class="disclaimer">
   
     <p>
-      © Massimo Penzo,  &mdash; built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="https://github.com/karambir/taman" target="_blank">Taman</a>, a port of jekyll theme <a href="https://github.com/swanson/lagom" target="_blank">Lagom</a>.
+      © massimo_penzo,  &mdash; built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="https://github.com/karambir/taman" target="_blank">Taman</a>, a port of jekyll theme <a href="https://github.com/swanson/lagom" target="_blank">Lagom</a>.
     </p>
-  </div>      </div>
+  </div>      </div> -->
     </div>
   </div>
 

@@ -39,7 +39,7 @@ help:
 
 
 mp_clean:
-	rm -rfv $(OUTPUTDIR)/*
+	rm -rfv $(OUTPUTDIR)/
 
 
 html:
